@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "API Backend com Express, Prisma e Zod",
   "main": "src/server.js",
+  "type": "module",
   "scripts": {
-    "start": "node src/server.js"},
+    "start": "node src/server.js"
+  },
   "keywords": [
     "node",
     "express",

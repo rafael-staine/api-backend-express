@@ -33,10 +33,14 @@
 
 - HTTPs // protocolo de transferencia que estabelece as regras das requisições e repostas da web 
 
-# 
+#
+ 
 - Get - prgar 
-
 - Post - cadastrar 
 - Put - editar os dados completos
 - Patch - atualizar dados parcialmente 
 - Delete - apaga osdados
+
+#
+
+- Como mudo o formado de importação de importação/exportação de require para inport // adicionar o package.json a propriedade type: "module"
