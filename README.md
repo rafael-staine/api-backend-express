@@ -8,6 +8,8 @@
 
 - npm start // Unico que pode ser usado sem o run, para iniciar o projeto
 
+-npm run nome_do-script // Executa um script do Package json (apenas o start pode ignorar o comando run)
+
 # Comandos Git
 
 // configura usuário e email 
@@ -19,11 +21,11 @@
 
 # Tópicos Importantes
 
-- Freamework // conjunto de recursos ou ferramentas para resolver um determinado problema ou criar uma solução
+- Freamework // Conjunto de recursos ou ferramentas para resolver um determinado problema ou criar uma solução
 
 - JavaScript // É a linguagem de programação usada para web
 
-- NPM (Node Package Menager) gerenciador de pacotes do node 
+- NPM (Node Package Menager) // Gerencia o pacote do node 
 
 - Node.js // É o ambiente runtime que executa o JS no terminal / servidor da maquina
 
@@ -31,16 +33,30 @@
 
 - API // Conjuntos de rotas que dão resposts para usuarios
 
-- HTTPs // protocolo de transferencia que estabelece as regras das requisições e repostas da web 
+- HTTPs // Protocolo de transferencia que estabelece as regras das requisições e repostas da web / comunicação entre clientes e servidores
+
+# ↑
+  
+- Get - Pegar / tras as informações 
+- Post - Cadastrar / cadastra dados
+- Put - Edita os dados completos
+- Patch - Atualizar dados parcialmente 
+- Delete - Apaga os dados
 
 #
- 
-- Get - prgar 
-- Post - cadastrar 
-- Put - editar os dados completos
-- Patch - atualizar dados parcialmente 
-- Delete - apaga osdados
+
+- Como mudo o formado de importação de importação/exportação de require para inport // adicionar o package.json a propriedade (type:) "module"
 
 #
 
-- Como mudo o formado de importação de importação/exportação de require para inport // adicionar o package.json a propriedade type: "module"
+- --whatch = observar // (Parametro para rodar js em modo dev, que permite rodar novamente o script quando algum arquivo é alterado)
+
+### Sintaxe basica de uma rota da API
+
+app.put('/user', (req, res) => {
+  res.json('Usuário editado com sucesso')
+})
+
+- Método criar ou inserir: post
+- Rota ou endereço: /produto
+- Tipo de resposta: json
