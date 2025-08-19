@@ -1,41 +1,19 @@
 import express from 'express'
+import profileRouter from './routers/profileRouter.js'
+import productRouter from './routers/productRouter.js'
+import supplierRouter from './routers/supplierRouter.js'
+import carRouter from './routers/carRouter.js'
 
 const app = express()
 const port = 3333
 
-app.use(express.json())
+app.use(express.json()) // Converter para JSON que chegou na requisição em um objeto JS e vai salvar em req.body
 
-app.get('/profile', (req, res) => {
-  res.json({ message: 'Perfil de usuario!' })
-})
-
-app.post('/profile', (req, res) => {
-  const dados = req.body
-  console.log(dados)
-  res.json({
-    menssage: 'Usuário criado com sucesso!',
-    profile: dados
-  })
-})
-
-app.put('/profile', (req, res) => {
-  const dados = req.body
-  console.log(dados)
-  res.json({
-    menssage: 'Usuário editado com sucesso!',
-    profile: dados
-  })
-})
-
-app.delete('/profile', (req, res) => {
-  const dados = req.body
-  console.log(dados)
-  res.json({
-    menssage: 'Usuário deletado com sucesso!',
-    profile: dados
-  })
-})
+app.use('/profile', profileRouter)
+app.use('/product', profileRouter)
+app.use('/supplier', supplierRouter)
+app.use('/car', carRouter)
 
 app.listen(port, () => {
-  console.log(`Example app listening on port http://localhost:${port}`)
+  console.log(`API Rodando em http://localhost:${port}`)  
 })

@@ -60,3 +60,5 @@ app.put('/user', (req, res) => {
 - Método criar ou inserir: post
 - Rota ou endereço: /produto
 - Tipo de resposta: json
+
+- Para que server o Router no express // Organização e facilidade de manutenção
