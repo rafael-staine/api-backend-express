@@ -62,3 +62,17 @@ app.put('/user', (req, res) => {
 - Tipo de resposta: json
 
 - Para que server o Router no express // Organização e facilidade de manutenção
+
+- O que é im padrão de projeto // É uma forma de codificar que é amplamente conhecida
+
+- Quem cria o padrão? - a própria comunidade
+
+- MVC = Model, View, Controller
+
+- Qual o papel do MVC // Organizar o codigo separando em tres camcadas
+
+- Papel do model // Acesso ao banco de dados e regras de negocios do proeto
+
+- Camada view // É a camada de vizualização / apresentação
+
+- Controller // Controlar a entrada, processamento e saida dos dados
