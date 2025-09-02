@@ -69,10 +69,55 @@ app.put('/user', (req, res) => {
 
 - MVC = Model, View, Controller
 
-- Qual o papel do MVC // Organizar o codigo separando em tres camcadas
+#### Qual o papel do MVC
 
-- Papel do model // Acesso ao banco de dados e regras de negocios do proeto
+- Organizar o codigo separando em tres camcadas
 
-- Camada view // É a camada de vizualização / apresentação
+- Papel do model (M) // Acesso ao banco de dados e regras de negocios do proeto
 
-- Controller // Controlar a entrada, processamento e saida dos dados
+- Camada view (V) // É a camada de vizualização / apresentação
+
+- Controller (C) // Controlar a entrada, processamento e saida dos dados
+
+#### ORM 
+##### Object / Relational / Model
+- O que é // é uma forama de relacionar um código js e a base de dados
+
+- Qual os beneficios de usar um ORM
+
+- facilita realizar as operações no banco
+
+- facilidade de modificar o banco de dados
+
+#### Tipos de ORM
+- Sequelize
+- Prisma
+
+#### Tipos de ORM
+- Prisma
+- Sequelize
+- Mongoze
+
+##### Qual a diferença de Dependencias e Dependencias Dev 
+
+- Dependenvcas Dev sao ferramentas que só são usadas durante o desenvolvimento do projeto
+
+- Dependencias são recursos que são usados dentro do projeto
+
+## Comandos dos prisma
+
+- Instalação do Prisma
+  - npm i prisma - D
+  - npm i @prisma/client
+
+- Inicialização do Prisma
+  - npx prisma init
+
+- Gerar o model do prisma a partir de um BD existente
+  - npx prisma db pull
+
+- Gerar o BD a partir de um model do prisma
+  - npx prisma db push
+
+- Gerar os arquivos necessários para usar o prisma client no código
+  -  npx prisma generate

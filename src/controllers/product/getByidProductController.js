@@ -1,4 +1,4 @@
-export const getByidProductController = (req, res) => {
-    const id = req.params.id
-    res.json({ message: `Produto está buscando o usuário de ID ${id}` })
+export const getByIdProductController = (req, res) => {
+  const id = req.params.id
+  res.json({message: `Produto com ID ${id} consultado com sucesso!` })
 }

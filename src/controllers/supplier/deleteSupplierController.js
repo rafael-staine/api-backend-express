@@ -1,7 +1,4 @@
 export const deleteSupplierController = (req, res) => {
-  const { id } = req.params
-  res.json({
-    message: 'Fornecedor deletado com sucesso!',
-    supplier: { id }
-  })
+  const id = req.params.id
+  res.json({message: `Fornecedor com ID ${id} deletado com sucesso!`})
 }

@@ -1,4 +1,4 @@
-export const getByidProfileController = (req, res) => {
-    const id = req.params.id
-    res.json({ message: `Usuário está buscando o usuário de ID ${id}` })
+export const getByIdProfileController = (req, res) => {
+  const id = req.params.id
+  res.json({message: `Usuário com ID ${id} consultado com sucesso!` })
 }

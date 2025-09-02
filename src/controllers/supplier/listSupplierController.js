@@ -1,6 +1,3 @@
 export const listSupplierController = (req, res) => {
-  res.json({
-    message: 'Lista de fornecedores',
-    suppliers: []
-  })
+  res.json({message: 'Fornecedores consultados com sucesso!'})
 }

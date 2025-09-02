@@ -1,3 +1,3 @@
 export const listProductController = (req, res) => {
-    res.json({ message: 'Produto de todos os usuários' })
+  res.json({message: 'Produtos consultados com sucesso!'})
 }
