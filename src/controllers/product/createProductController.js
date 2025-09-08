@@ -5,3 +5,4 @@ export const createProductController = (req, res) => {
     product: dados
   })
 }
+
