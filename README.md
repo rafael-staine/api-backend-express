@@ -121,3 +121,8 @@ app.put('/user', (req, res) => {
 
 - Gerar os arquivos necessários para usar o prisma client no código
   -  npx prisma generate
+
+
+#### Middlewaers  
+
+- padrão de projeto usado no express que divide o codigo em funções que são chamadas de middlewares, e toda vez que ele termina de fazer o que tem que fazer, ele passa pro proximo
