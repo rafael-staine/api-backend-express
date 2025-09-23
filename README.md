@@ -13,8 +13,8 @@
 # Comandos Git
 
 // configura usuário e email 
-- git config --global user.name "rafael-staine"
-- git config --global user.email "rafael.staine@aluno.ifsp.edu.br"
+- git config --global user.name "..."
+- git config --global user.email "..."
 
 - git init (inicia o git em uma pasta)
 - git remote add origin _url_do_github_ // vincula seu projeto local ao repositório do github
@@ -37,7 +37,7 @@
 
 # ↑
   
-- Get - Pegar / tras as informações 
+- Get - Listar / tras as informações 
 - Post - Cadastrar / cadastra dados
 - Put - Edita os dados completos
 - Patch - Atualizar dados parcialmente 
@@ -63,7 +63,7 @@ app.put('/user', (req, res) => {
 
 - Para que server o Router no express // Organização e facilidade de manutenção
 
-- O que é im padrão de projeto // É uma forma de codificar que é amplamente conhecida
+- O que é um padrão de projeto // É uma forma de codificar que é amplamente conhecida
 
 - Quem cria o padrão? - a própria comunidade
 
@@ -126,3 +126,61 @@ app.put('/user', (req, res) => {
 #### Middlewaers  
 
 - padrão de projeto usado no express que divide o codigo em funções que são chamadas de middlewares, e toda vez que ele termina de fazer o que tem que fazer, ele passa pro proximo
+
+
+
+
+
+
+
+## Estudo para prova
+
+- Freamework / Conjunto de recursos ou ferramentas para resolver um determinado problema ou criar uma solução
+
+- Express / É um freamework para construir API Backend
+
+- JavaScript / É a linguagem de programação usada para web
+
+- NPM (Node Package Menager) / Gerencia o pacote do node 
+
+- Node.js / É o ambiente runtime que executa o JS no terminal / servidor da maquina
+
+- HTTPs / Protocolo de transferencia que estabelece as regras das requisições e repostas da web / comunicação entre clientes e servidores
+
+  - Get - Listar / tras as informações 
+  - Post - Cadastrar / cadastra dados
+  - Put - Edita os dados completos
+  - Patch - Atualizar dados parcialmente 
+  - Delete - Apaga os dados
+
+- Como mudo o formado de importação de importação/exportação de require para inport / adicionar o package.json a propriedade (type:) "module"
+
+- --whatch = observar / toda vez que salva o código ele desliga o servidor e liga novamente altomaticamente e deixa mais produtivo
+
+- Router (Para que separar as rotas?) / organizar o código e facilitar a manutenção
+
+- Parâmetros de rota. Exemplo: /:id
+  - const id = req.params.id
+
+- O que é um padrão de projeto / É uma forma de codificar que é amplamente conhecida
+
+- MVC / Model, View, Controller
+
+- Para que serve / Organizar o codigo separando em tres camadas 
+
+  - Papel do model (M) / Acesso ao banco de dados e regras de negocios do proeto
+  - Camada view (V) / É a camada de vizualização / apresentação
+  - Controller (C) / Controlar a entrada, processamento e saida dos dados
+
+- ORM / Object / Relational / Model
+
+- O que é ORM // é uma forama de relacionar um código js e a base de dados que cria uma representação do BD 
+
+o prisma da ferramentas para criar o 
+
+- Middlewaers = Meio / Metade
+
+  - padrão de projeto usado no express que divide o codigo em funções que são chamadas de middlewares, e toda vez que ele termina de fazer o que tem que fazer, ele passa pro proximo
+
+  é uma forma de organizar o codigo onde cada função segue o fluxo
+  
