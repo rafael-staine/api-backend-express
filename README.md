@@ -79,7 +79,7 @@ app.put('/user', (req, res) => {
 
 - Controller (C) // Controlar a entrada, processamento e saida dos dados
 
-#### ORM 
+#### ORM
 ##### Object / Relational / Model
 - O que é // é uma forama de relacionar um código js e a base de dados
 
@@ -127,12 +127,6 @@ app.put('/user', (req, res) => {
 
 - padrão de projeto usado no express que divide o codigo em funções que são chamadas de middlewares, e toda vez que ele termina de fazer o que tem que fazer, ele passa pro proximo
 
-
-
-
-
-
-
 ## Estudo para prova
 
 - Freamework / Conjunto de recursos ou ferramentas para resolver um determinado problema ou criar uma solução
@@ -141,16 +135,16 @@ app.put('/user', (req, res) => {
 
 - JavaScript / É a linguagem de programação usada para web
 
-- NPM (Node Package Menager) / Gerencia o pacote do node 
+- NPM (Node Package Menager) / Gerencia o pacote do node
 
 - Node.js / É o ambiente runtime que executa o JS no terminal / servidor da maquina
 
 - HTTPs / Protocolo de transferencia que estabelece as regras das requisições e repostas da web / comunicação entre clientes e servidores
 
-  - Get - Listar / tras as informações 
+  - Get - Listar / tras as informações
   - Post - Cadastrar / cadastra dados
   - Put - Edita os dados completos
-  - Patch - Atualizar dados parcialmente 
+  - Patch - Atualizar dados parcialmente
   - Delete - Apaga os dados
 
 - Como mudo o formado de importação de importação/exportação de require para inport / adicionar o package.json a propriedade (type:) "module"
@@ -176,11 +170,9 @@ app.put('/user', (req, res) => {
 
 - O que é ORM // é uma forama de relacionar um código js e a base de dados que cria uma representação do BD 
 
-o prisma da ferramentas para criar o 
+o prisma da ferramentas para criar 
 
 - Middlewaers = Meio / Metade
-
   - padrão de projeto usado no express que divide o codigo em funções que são chamadas de middlewares, e toda vez que ele termina de fazer o que tem que fazer, ele passa pro proximo
 
-  é uma forma de organizar o codigo onde cada função segue o fluxo
-  
+É uma forma de organizar o codigo onde cada função segue o fluxo
