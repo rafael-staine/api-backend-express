@@ -2,8 +2,9 @@ import { PrismaClient } from '../generated/prisma/index.js'
 
 const prisma = new PrismaClient()
 
-export const create = async (profile) => {
+export const create = async (profile) => { 
     return await prisma.user.create({
+        data: profile,
         select: {
             id: true,
             name: true,
@@ -22,7 +23,7 @@ export const update = async (id, profile) => {
             name: true,
             email: true,
             avatar: true
-        }
+        }  
     })
 }
 
@@ -46,6 +47,12 @@ export const getById = async (id) => {
             email: true,
             avatar: true
         }
+    })
+}
+
+export const getByEmail = async (email) => {
+    return await prisma.user.findUnique({
+        where: { email }
     })
 }
 
