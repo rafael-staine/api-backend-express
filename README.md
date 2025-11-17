@@ -176,3 +176,6 @@ o prisma da ferramentas para criar
   - padrão de projeto usado no express que divide o codigo em funções que são chamadas de middlewares, e toda vez que ele termina de fazer o que tem que fazer, ele passa pro proximo
 
 É uma forma de organizar o codigo onde cada função segue o fluxo
+
+
+vao perder o acesso com o tokem
