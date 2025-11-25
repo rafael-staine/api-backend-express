@@ -6,6 +6,8 @@ import supplierRouter from './routers/supplierRouter.js'
 import customerRouter from './routers/customerRouter.js'
 import cors from 'cors'
 import { logger } from './middlewares/logger.js'
+import { errorHandler } from './middlewares/errorHandler.js'
+import { notFoundError } from './controllers/notFoundError.js'
 
 const app = express()
 const port = 3333
@@ -19,6 +21,9 @@ app.use('/product', productRouter)
 app.use('/supplier', supplierRouter)
 app.use('/customer', customerRouter)
 app.use('/profile', profileRouter)
+
+app.use(notFoundError)
+app.use(errorHandler)
 
 app.listen(port, () => {
   console.log(`API Rodando em http://localhost:${port}`)  
