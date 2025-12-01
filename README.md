@@ -179,3 +179,30 @@ o prisma da ferramentas para criar
 
 
 vao perder o acesso com o tokem
+
+
+# Estudo para prova
+
+#### Autenticação e Login de Usuário
+- Como salvar a senha do usuário no BD de forma segura? 
+  - Salvar com hash (Bcrypt)
+- Autenticação (Login), o que verificar e fazer no login?
+- JWT
+  - Qual o significado de JWT?
+    - Json Web Token
+  - Quais as vantagens do JWT?
+    - Payload já disponivel no token (Backend não precisa consultar o BD)
+    - Assinado pelo segredo do Backend
+    - Amplamente conhecido e com bibliotecas disponíveis
+  - Como é enviado o Token para o backend?
+    - Por meio do Header Autorization da requisição http
+
+#### Validação de Dados (Regras de Negócio) com Zod
+- Para que serve o Zod?
+  - Definir regras de negócio estabelecendo regras de validação para cada um dos campos do meu modelo
+- Para que serve o partial Zod?
+  - Para o Zod não precisar validar os campos que não são necessarios no momento
+
+#### ErroHandler (Middlawere para tratamento de erros da api)
+- Para que serve o ErroHandler?
+  - Capturar erros da aplicação, facilitar a manutenção, dar msg de qual erro é, não quebrar o seridor, e dar uma msg adequada para o usuário
